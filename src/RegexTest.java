@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 
 public class RegexTest {
 	public static void match(String raw) {
-		String regex = "Regex((?i:abc))_(te)st";
+		String regex = "11:54:23.\\d{6}.+BGManager.+onImageAvailable";
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(raw);
 		log("matches:" + matcher.matches() + "; count:" + matcher.groupCount());
